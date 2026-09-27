@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Data, runs, results
+data/
+simulated_data/
+results/
+logs/
+tmp/
+tmp*/
+*.mat
+*.nii
+*.nii.gz
+*.log

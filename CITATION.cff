@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "PINR"
+authors:
+  - family-names: Huang
+    given-names: Wenqi
+repository-code: "https://github.com/wenqihuang/PINR"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Physics-Informed Implicit Neural Representations for Joint B0 Estimation and Echo Planar Imaging"
+  authors:
+    - family-names: Huang
+      given-names: Wenqi
+    - family-names: Wang
+      given-names: Nan
+    - family-names: Liao
+      given-names: Congyu
+    - family-names: Lin
+      given-names: Yimeng
+    - family-names: Gao
+      given-names: Mengze
+    - family-names: Rueckert
+      given-names: Daniel
+    - family-names: Setsompop
+      given-names: Kawin
+  collection-title: "Medical Image Computing and Computer Assisted Intervention (MICCAI 2025)"
+  publisher:
+    name: Springer
+  year: 2025

@@ -1,0 +1,16 @@
+torch
+numpy
+scipy
+matplotlib
+PyYAML
+scikit-image
+nibabel
+
+# TOPUP baseline (main_topup.py): GRAPPA; FSL's topup binary must be on PATH (or set FSLDIR)
+pygrappa
+
+# Hash-grid encodings (model.py); needs nvcc matching your torch build
+# pip install --no-build-isolation git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+
+# Only for rebuilding the demo phantom (demo/build_mni_phantom.py)
+# nilearn

@@ -1,0 +1,44 @@
+data_config:
+  data_type: simulated
+  data_dir: ./simulated_data/multi_angle_rot2/
+  subject_id: subject01
+  slice_idx: 130
+  R: 4
+  b0_factor: 100
+
+model_config:
+  img:
+    encoding:
+      otype: Grid
+      type: Hash
+      n_levels: 16
+      n_features_per_level: 2
+      log2_hashmap_size: 20
+      base_resolution: 16
+      per_level_scale: 1.198
+      interpolation: linear
+    in_dim: 3   # x, y, z; z is zero for a single slice
+    hidden_dims: [256, 256]
+    out_dim: 2
+  b0:
+    encoding:
+      otype: Grid
+      type: Hash
+      n_levels: 16
+      n_features_per_level: 2
+      log2_hashmap_size: 20
+      base_resolution: 16
+      per_level_scale: 1.198
+      interpolation: linear
+    in_dim: 3
+    hidden_dims: [256, 256]
+    out_dim: 1
+
+train_config:
+  n_iter: 6000
+  lr: 3e-3
+  b0_smooth_factor: 1e-5
+  out_roi_supression_factor: 0
+
+log_config:
+  save_dir: results/simulated   # results go to {save_dir}_rot{N}/{subject}/
